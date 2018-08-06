@@ -1,0 +1,18 @@
+@import "variables";
+@import 'mixins';
+
+.contacts-page {
+    .default-padding {
+        @include page-padding();
+    }
+
+    .addresses-container,
+    .leave-feedback-container {
+        padding-top: $padding-xlarge-vertical;
+        padding-bottom: $padding-xlarge-vertical;
+    }
+
+    .map-container {
+        height: 35rem;
+    }
+}

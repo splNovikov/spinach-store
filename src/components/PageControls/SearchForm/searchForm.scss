@@ -1,0 +1,10 @@
+@import 'variables';
+
+.search-form {
+    display: flex;
+    align-content: center;
+
+    .search-trigger {
+        margin-left: $padding-small-horizontal;
+    }
+}

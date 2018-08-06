@@ -1,0 +1,25 @@
+{
+    "presets": [
+        "react",
+        "env",
+        "stage-0"
+    ],
+    "plugins": [
+        "add-module-exports",
+        "react-html-attrs",
+        "transform-decorators-legacy",
+      ["lodash", {"id": ["lodash", "recompose"]}],
+      "react-hot-loader/babel",
+        "transform-react-constant-elements",
+        "transform-react-inline-elements",
+        "transform-react-pure-class-to-function"
+    ],
+    "env": {
+        "test": {
+            "sourceMaps": "both"
+        },
+        "production": {
+            "plugins": ["transform-react-remove-prop-types"]
+        }
+    }
+}

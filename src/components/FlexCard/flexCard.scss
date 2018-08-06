@@ -1,0 +1,57 @@
+@import "variables";
+@import "colors";
+
+.flex-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid $color-border;
+  border-radius: $border-radius;
+  background-color: $color-flex-card-background;
+  margin: $padding-base-vertical 0;
+  padding: 0 $padding-small-horizontal;
+
+  .card-header {
+    padding: $padding-base-vertical 0;
+
+    .title {
+      font-weight: $font-weight-bold;
+      color: $color-text-label;
+    }
+    .date-modified {
+      font-size: $font-size-small;
+      color: $color-text-muted;
+    }
+  }
+
+  .card-body {
+    .content {
+      padding: $padding-base-vertical 0;
+    }
+
+    .image-container {
+      margin: $padding-base-vertical 0;
+      max-height: 30rem;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .image {
+        max-width: 100%;
+      }
+    }
+
+    .expand-collapse-label {
+      font-weight: $font-weight-bold;
+      color: $color-primary;
+      cursor: pointer;
+    }
+  }
+
+  .card-footer {
+    border-top: 1px solid $color-border;
+    padding: $padding-small-vertical 0;
+  }
+
+}
+

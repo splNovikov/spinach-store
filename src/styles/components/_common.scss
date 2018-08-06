@@ -1,0 +1,36 @@
+@import "../variables";
+
+.page-block {
+    margin: 0 auto;
+    max-width: $page-block-max-width;
+}
+
+.positive {
+    color: $color-positive;
+}
+
+.negative {
+    color: $color-negative;
+}
+
+.date {
+    color: $color-text-muted;
+    font-size: $font-size-small;
+    line-height: 2;
+}
+
+.text-muted {
+    color: $color-text-muted;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}

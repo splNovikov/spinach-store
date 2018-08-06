@@ -1,0 +1,19 @@
+@import 'variables';
+
+.sorting-select {
+    white-space: nowrap;
+
+    .sort-by {
+        &:first-letter {
+            text-transform: uppercase;
+        }
+
+        display: inline-block;
+        margin: 0;
+    }
+
+    .rc-select {
+        margin-left: $padding-small-horizontal;
+        width: 15rem;
+    }
+}

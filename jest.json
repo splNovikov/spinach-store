@@ -1,0 +1,29 @@
+{
+    "collectCoverageFrom": [
+        "**/*.{js,jsx}",
+        "!**/node_modules/**",
+        "!**/tests/**",
+        "!**/index.{js,jsx}"
+    ],
+    "collectCoverage": false,
+    "coverageReporters": [
+        "html"
+    ],
+    "roots": [
+        "src"
+    ],
+    "transform": {
+        "^.+\\.js$": "babel-jest"
+    },
+    "moduleFileExtensions": [
+        "js"
+    ],
+    "moduleNameMapper": {
+        "\\.(scss)$": "identity-obj-proxy"
+    },
+    "verbose": true,
+    "globals": {
+        "__DEVTOOLS__": false,
+        "__API_BASE_URL__": ""
+    }
+}

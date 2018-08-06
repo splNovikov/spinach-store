@@ -1,0 +1,15 @@
+@import 'colors';
+@import "mixins";
+
+.page-header {
+  display: flex;
+  flex-direction: column;
+
+  .underlined {
+    border-bottom: 1px solid $color-border;
+  }
+
+  .social-network-container {
+    @include page-padding();
+  }
+}

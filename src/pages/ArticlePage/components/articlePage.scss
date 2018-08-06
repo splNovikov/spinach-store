@@ -1,0 +1,55 @@
+@import "variables";
+@import 'mixins';
+
+.article-page {
+  @include page-padding();
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-bottom: $padding-xlarge-vertical;
+
+  .article {
+    overflow-x: hidden;
+
+    &-title-container {
+      text-align: center;
+      margin: $padding-large-vertical 0;
+
+      .article-title {
+        margin: 0;
+      }
+    }
+
+    .share-icons-container {
+      display: flex;
+      justify-content: center;
+      margin: $padding-large-vertical 0 $padding-xlarge-vertical;
+    }
+
+    &-image-container {
+      max-height: 30rem;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .article-image {
+        max-width: 100%;
+      }
+    }
+
+    .price-header {
+      margin-bottom: 0;
+      text-transform: capitalize;
+    }
+
+    &-content-container {
+      margin: $padding-large-vertical 0;
+    }
+
+    .plain-text {
+      text-align: justify;
+    }
+  }
+}

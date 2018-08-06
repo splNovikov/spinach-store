@@ -1,0 +1,33 @@
+@import "variables";
+@import 'mixins';
+
+.about-page {
+    @include page-padding();
+
+    padding-top: $padding-xlarge-vertical;
+    padding-bottom: $padding-xlarge-vertical;
+
+    .block {
+        display: flex;
+        flex-wrap: wrap;
+        margin: $padding-large-vertical 0;
+
+        .text {
+            flex: 5 0;
+            text-indent: 2rem;
+            padding: $padding-large-horizontal;
+            min-width: 30rem;
+            align-items: center;
+        }
+
+        .img-container {
+            flex: 1 0 auto;
+            justify-content: center;
+            text-align: center;
+
+            .fa {
+                font-size: 15rem;
+            }
+        }
+    }
+}

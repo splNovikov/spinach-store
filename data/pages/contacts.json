@@ -1,0 +1,43 @@
+{
+  "addresses": [
+    {
+      "street": "Саратов, Чапаева, 28",
+      "phone": "8 (845-2) 933-460",
+      "workingDays": "calendar.everyDay",
+      "workingHours": {
+        "from": "9:00",
+        "to": "20:00"
+      },
+      "coordinates": {
+        "lat": 51.525398,
+        "lng": 46.017235
+      }
+    },
+    {
+      "street": "Саратов, Чапаева, 69",
+      "phone": "8 (845-2) 933-215",
+      "workingDays": "calendar.everyDay",
+      "workingHours": {
+        "from": "9:00",
+        "to": "20:00"
+      },
+      "coordinates": {
+        "lat": 51.535656,
+        "lng": 46.022584
+      }
+    },
+    {
+      "street": "Саратов, Вавилова, 43",
+      "phone": "8 (845-2) ???-???",
+      "workingDays": "calendar.everyDay",
+      "workingHours": {
+        "from": "9:00",
+        "to": "20:00"
+      },
+      "coordinates": {
+        "lat": 51.535362,
+        "lng": 46.008032
+      }
+    }
+  ]
+}

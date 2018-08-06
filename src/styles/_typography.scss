@@ -1,0 +1,69 @@
+@import "colors";
+@import "variables";
+
+$font-path: "/assets/fonts/" !default;
+$font-name: "Open Sans" !default;
+
+$font-weights-map: (
+    Light:     $font-weight-light,
+    Regular:   $font-weight-regular,
+    Semibold:  $font-weight-semi-bold,
+    Bold:      $font-weight-bold,
+    ExtraBold: $font-weight-extra-bold
+);
+
+@each $name, $weight in $font-weights-map {
+    @font-face {
+        font-family:    $font-name;
+        src:            url($font-path + "Open Sans Family/OpenSans-#{$name}.ttf");
+        font-weight:    $weight;
+    }
+    /* not exists RegularItalic, but just Italic*/
+    @if ($name == "Regular") {
+        $name: '';
+    }
+    @font-face {
+        font-family:    $font-name;
+        src:            url($font-path + "Open Sans Family/OpenSans-#{$name}Italic.ttf");
+        font-style:     italic;
+        font-weight:    $weight;
+    }
+}
+
+html {
+    font-size:      $font-size-root;
+    color:          $color-header;
+}
+
+body {
+    font-family:    $font-name;
+    font-size:      $font-size-medium;
+    line-height:    $line-height-base;
+}
+
+h1 {
+    font-size:      $font-size-xx-large;
+    font-weight:    $font-weight-bold;
+}
+
+h2 {
+    font-size:      $font-size-x-large;
+    font-weight:    $font-weight-bold;
+}
+
+h3 {
+    font-size:      $font-size-large;
+    font-weight:    $font-weight-bold;
+}
+
+h4 {
+    font-size: $font-size-medium;
+}
+
+h5 {
+    font-size: $font-size-small;
+}
+
+h6 {
+    font-size: $font-size-x-small;
+}

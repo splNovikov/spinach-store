@@ -1,0 +1,80 @@
+@import "colors";
+@import "variables";
+
+.nav {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    line-height: normal;
+
+    &-item {
+        display: block;
+
+        a {
+            width: 100%;
+            padding: 1.4rem 2.4rem;
+            display: inline-block;
+            line-height: 1.9rem;
+            position: relative;
+
+            &:before {
+                position: absolute;
+                background-color: $color-link;
+                z-index: 2;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                width: 3px;
+            }
+
+            &.active {
+                text-shadow: $link-active-text-shadow; // alternative of font-weight
+                color: $color-tab-active;
+                cursor: default;
+                background-color: transparent;
+
+                &:before {
+                    content: '';
+                }
+            }
+
+            &:hover {
+                background-color: $color-nav-item-hover;
+                color: $color-tab-hover;
+            }
+        }
+    }
+
+    &.horizontal {
+
+        .nav-item {
+            display: inline-block;
+            vertical-align: top;
+
+            a {
+                text-align: center;
+
+                &:before {
+                    top: auto;
+                    bottom: -1px;
+                    right: 0;
+                    height: 3px;
+                    width: auto;
+                }
+
+                &.active {
+                    border-left: 0;
+                }
+            }
+        }
+    }
+
+    &.secondary {
+        font-size: $nav-link-text-size;
+
+        .nav-item a {
+            padding: 1.1rem 2.4rem 1.2rem 2.4rem;
+            line-height: 1.7rem;
+        }
+    }
+}

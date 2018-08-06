@@ -1,0 +1,38 @@
+@import "colors";
+@import "variables";
+@import "mixins";
+
+$border-width: 0.5rem;
+
+.form-error-summary {
+    position: relative;
+    margin: 0.5rem 0;
+    padding: 0.5rem 0;
+    display: block;
+    white-space: normal;
+
+    .arrow {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 0;
+        height: 0;
+        margin-left: -$border-width;
+
+        border-width: $border-width $border-width 0;
+        border-color: transparent;
+        border-style: solid;
+        border-top-color: $color-error-background;
+    }
+
+    .inner {
+        display: block;
+        padding: 1rem;
+        color: $color-error-summary-text;
+        text-align: center;
+        background-color: $color-error-background;
+        @include border-radius();
+        font-size: $font-size-small;
+        font-weight: $font-weight-bold;
+    }
+}

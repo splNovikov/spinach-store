@@ -1,0 +1,15 @@
+@import 'variables';
+
+.rc-select-selection {
+    border-radius: $select-border-radius;
+}
+
+.rc-select-dropdown {
+    .rc-select-dropdown-menu-item {
+        // crop text
+        max-width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+}

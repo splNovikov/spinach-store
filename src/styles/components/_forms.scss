@@ -1,0 +1,38 @@
+@import "colors";
+@import "variables";
+@import "mixins";
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+    padding: .8rem;
+    @include border-rounded($border-dark);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    height: $height-base;
+}
+
+.validation-container {
+    display: inline-block;
+    min-height: 2.1rem;
+    min-width: 30rem;
+
+    .form-error,
+    .form-warning {
+        line-height: 3.4rem;
+    }
+
+    &.vertical {
+        padding-top: 2.8rem;
+    }
+}
+
+label {
+    color: $color-text-label;
+    white-space: nowrap;
+    cursor: pointer;
+}

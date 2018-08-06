@@ -1,0 +1,9 @@
+@import "variables";
+@import 'mixins';
+
+.recipes-page {
+  @include page-padding();
+
+  padding-top: $padding-xlarge-vertical;
+  padding-bottom: $padding-xlarge-vertical;
+}

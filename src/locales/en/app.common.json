@@ -1,0 +1,14 @@
+{
+  "app.common.description": "description",
+  "app.common.ingredients": "ingredients",
+  "app.common.directions": "directions",
+  "app.common.notSpecified": "not specified",
+  "app.common.sortBy": "sort by",
+  "app.common.noResults": "no results",
+  "app.common.manufacturer": "manufacturer",
+  "app.common.weight": "weight",
+  "app.common.price": "price",
+  "app.common.composition": "composition",
+  "app.common.expand": "expand",
+  "app.common.collapse": "collapse"
+}

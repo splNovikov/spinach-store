@@ -1,0 +1,18 @@
+{
+    "leaveFeedbackForm.sendMessage": "Отправить сообщение",
+
+    "leaveFeedbackForm.name.placeholder": "Введите своё имя...",
+    "leaveFeedbackForm.name.label": "Имя (обязательно)",
+
+    "leaveFeedbackForm.email.placeholder": "Введите Ваш email...",
+    "leaveFeedbackForm.email.label": "Ваша почта",
+
+    "leaveFeedbackForm.subject.placeholder": "Введите тему...",
+    "leaveFeedbackForm.subject.label": "Тема",
+
+    "leaveFeedbackForm.message.label": "Сообщение (обязательно)",
+    "leaveFeedbackForm.message.placeholder": "Введите Ваше сообщение...",
+
+    "leaveFeedbackForm.asideTitle": "Связаться с нами",
+    "leaveFeedbackForm.asideText": "Мы открыты для ваших идей и предложений, пожеланий и конструктивной критики. Если у вас есть что сказать - просто напишите нам."
+}

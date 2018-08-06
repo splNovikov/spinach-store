@@ -1,0 +1,11 @@
+@import "colors";
+
+.form-warning {
+    color: $color-negative;
+
+    .font-icon {
+        padding: 0.5rem;
+        color: $color-negative;
+        pointer-events: none;
+    }
+}

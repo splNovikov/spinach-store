@@ -1,0 +1,14 @@
+{
+  "app.common.description": "описание",
+  "app.common.ingredients": "ингредиенты",
+  "app.common.directions": "способ приготовления",
+  "app.common.notSpecified": "не указано",
+  "app.common.sortBy": "упорядочить по",
+  "app.common.noResults": "нет результатов",
+  "app.common.manufacturer": "производитель",
+  "app.common.weight": "вес",
+  "app.common.price": "цена",
+  "app.common.composition": "состав",
+  "app.common.expand": "показать полностью",
+  "app.common.collapse": "скрыть"
+}

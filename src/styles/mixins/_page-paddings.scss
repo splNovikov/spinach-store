@@ -1,0 +1,11 @@
+@import 'responsive-breakpoints';
+
+@mixin page-padding() {
+    padding-left: $padding-small-content;
+    padding-right: $padding-small-content;
+
+    @include for-lg {
+        padding-left: $padding-large-content;
+        padding-right: $padding-large-content;
+    }
+}

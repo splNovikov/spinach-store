@@ -1,0 +1,53 @@
+@import "variables";
+@import 'mixins';
+
+.recipe-page {
+  @include page-padding();
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-bottom: $padding-xlarge-vertical;
+
+  .recipe {
+    overflow-x: hidden;
+
+    &-title-container {
+      text-align: center;
+      margin: $padding-large-vertical 0;
+
+      .recipe-title {
+        margin: 0;
+      }
+    }
+
+    .share-icons-container {
+      display: flex;
+      justify-content: center;
+      margin: $padding-large-vertical 0 $padding-xlarge-vertical;
+    }
+
+    &-image-container {
+      max-height: 30rem;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .recipe-image {
+        max-width: 100%;
+      }
+    }
+
+    .ingredients-header,
+    .content-header,
+    .directions-header {
+      margin-bottom: 0;
+      text-transform: capitalize;
+    }
+
+    .plain-text {
+      text-align: justify;
+    }
+  }
+}

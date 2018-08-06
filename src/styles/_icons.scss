@@ -1,0 +1,25 @@
+@import "colors";
+
+.fa {
+    color: $color-icon;
+    cursor: pointer;
+
+    &:hover {
+        color: $color-icon-hover;
+    }
+
+    &.disabled,
+    &:disabled {
+        pointer-events: none;
+        color: $color-icon-disabled;
+    }
+
+
+    &.fa-grey {
+        color: $grey-icon-color;
+
+        &:hover {
+            color: $color-icon;
+        }
+    }
+}

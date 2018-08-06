@@ -1,0 +1,26 @@
+{
+    "source": "./src",
+    "destination": "./esdoc",
+    "includes": ["\\.(js|jsx)$"],
+    "access": ["public", "protected"],
+    "unexportIdentifier": false,
+    "undocumentIdentifier": true,
+    "builtinExternal": true,
+    "package": "./package.json",
+    "coverage": true,
+    "includeSource": false,
+    "test": {
+        "type": "mocha",
+        "source": "./src",
+        "includes": ["(spec|Spec|test|Test)\\.(js|es6)$"],
+        "excludes": ["\\.config\\.(js|es6)$"]
+      },
+    "experimentalProposal": {
+        "classProperties": true,
+        "objectRestSpread": true,
+        "decorators": true,
+        "doExpressions": true,
+        "functionBind": true,
+        "exportExtensions": true
+    }
+}

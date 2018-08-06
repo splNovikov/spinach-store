@@ -1,0 +1,66 @@
+@import "../colors";
+@import "../variables";
+
+// Button variants
+//
+// Easily pump out default styles, as well as :hover, :focus, :active,
+// and disabled options for all buttons
+
+@mixin button-variant($color, $background, $border, $underline) {
+    color: $color;
+    background-color: $background;
+    border-color: $border;
+
+    &:before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        right: 50%;
+        bottom: -0.1rem;
+        background: $underline;
+        height: 0.4rem;
+        border-radius: 0 0 0.3rem 0.3rem;
+        transition-property: left, right;
+        transition-duration: $animation-duration;
+        transition-timing-function: ease-out;
+    }
+
+    &:hover,
+    &.hover,
+    &:focus,
+    &.focus {
+        &:before {
+            left: -0.1rem;
+            right: -0.1rem;
+        }
+    }
+
+    &:active,
+    &.active,
+    &.disabled,
+    &[disabled],
+    fieldset[disabled] & {
+        &:before {
+            left: 50%;
+            right: 50%;
+        }
+        &:hover,
+        &:focus,
+        &.focus {
+            background-color: $background;
+            border-color: $border;
+        }
+    }
+
+    .badge {
+        color: $color;
+        background-color: $background;
+    }
+}
+
+@mixin button-size($padding-vertical, $padding-horizontal, $font-size, $line-height, $border-radius) {
+    padding: $padding-vertical $padding-horizontal;
+    font-size: $font-size;
+    line-height: $line-height;
+    border-radius: $border-radius;
+}

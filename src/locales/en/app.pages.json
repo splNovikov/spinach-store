@@ -1,0 +1,11 @@
+{
+  "app.pages.home": "Home",
+  "app.pages.news": "News",
+  "app.pages.products": "Products",
+  "app.pages.product": "Product",
+  "app.pages.articles": "Articles",
+  "app.pages.recipes": "Recipes",
+  "app.pages.recipe": "Recipe",
+  "app.pages.about": "About",
+  "app.pages.contacts": "Contacts"
+}

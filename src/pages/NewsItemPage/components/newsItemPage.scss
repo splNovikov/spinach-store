@@ -1,0 +1,41 @@
+@import "variables";
+@import 'mixins';
+
+.news-item-page {
+  @include page-padding();
+
+  .news-item {
+    overflow-x: hidden;
+
+    &-title-container {
+      text-align: center;
+      margin: $padding-large-vertical 0;
+
+      .news-item-title {
+        margin: 0;
+      }
+    }
+
+    .share-icons-container {
+      display: flex;
+      justify-content: center;
+      margin: $padding-large-vertical 0 $padding-xlarge-vertical;
+    }
+
+    &-image-container {
+      max-height: 30rem;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .news-item-image {
+        max-width: 100%;
+      }
+    }
+
+    &-content-container {
+      margin: $padding-large-vertical 0;
+    }
+  }
+}

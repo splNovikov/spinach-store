@@ -1,0 +1,18 @@
+{
+    "leaveFeedbackForm.sendMessage": "Send Message",
+
+    "leaveFeedbackForm.name.placeholder": "Enter your name...",
+    "leaveFeedbackForm.name.label": "Name (required)",
+
+    "leaveFeedbackForm.email.placeholder": "Enter your email...",
+    "leaveFeedbackForm.email.label": "Your Mail",
+
+    "leaveFeedbackForm.subject.placeholder": "Enter subject...",
+    "leaveFeedbackForm.subject.label": "Subject",
+
+    "leaveFeedbackForm.message.label": "Message (required)",
+    "leaveFeedbackForm.message.placeholder": "Enter your message...",
+
+    "leaveFeedbackForm.asideTitle": "Get in touch",
+    "leaveFeedbackForm.asideText": "We are open for your ideas and suggestions, wishes and constructive criticism. If you have something to say - just write to us."
+}

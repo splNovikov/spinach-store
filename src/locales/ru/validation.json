@@ -1,0 +1,5 @@
+{
+    "validation.required": "Обязательно",
+    "validation.minLength": "Должно быть не менее {min} символов",
+    "validation.maxLength": "Должно быть не более {max} символов"
+}

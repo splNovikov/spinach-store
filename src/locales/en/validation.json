@@ -1,0 +1,5 @@
+{
+    "validation.required": "Required",
+    "validation.minLength": "Must be min {min} characters",
+    "validation.maxLength": "Must be max {max} characters"
+}

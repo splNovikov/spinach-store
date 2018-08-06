@@ -1,0 +1,41 @@
+@import "variables";
+@import "mixins";
+
+.small-panel {
+    flex: 1 0 auto;
+    padding: 0 $padding-small-content;
+
+    .toggle-container {
+        display: flex;
+        justify-content: flex-end;
+        padding: .4rem 0;
+    }
+
+    @include for-md {
+        display: none;
+    }
+
+    .nav-items-container {
+        $max-height: 60rem;
+
+        &-enter {
+            overflow: hidden;
+            max-height: 0;
+        }
+
+        &-enter-active {
+            max-height: $max-height;
+            transition: max-height 400ms ease-in;
+        }
+
+        &-exit {
+            overflow: hidden;
+            max-height: $max-height;
+        }
+
+        &-exit-active {
+            max-height: 0;
+            transition: max-height 300ms ease-in;
+        }
+    }
+}

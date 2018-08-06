@@ -1,0 +1,47 @@
+@import 'colors';
+@import 'variables';
+@import 'typography';
+
+.rc-pagination {
+    font-family: $font-name;
+    display: inline-flex;
+
+    .rc-pagination-disabled {
+        .rc-pagination-item-link {
+            cursor: $cursor-disabled;
+        }
+    }
+
+    .rc-pagination-item, .rc-pagination-prev, .rc-pagination-next, .rc-pagination-jump-prev, .rc-pagination-jump-next {
+        border-radius: $pagination-border-radius;
+        margin-right: $padding-xsmall-horizontal;
+    }
+
+    .rc-pagination-jump-prev:hover:after, .rc-pagination-jump-next:hover:after {
+        color: $color-pagination-primary;
+    }
+
+    .rc-pagination-prev a:after, .rc-pagination-next a:after {
+        margin-top: -.2rem;
+    }
+
+    .rc-pagination-item {
+        &:not(.rc-pagination-item-active):hover a {
+            color: $color-pagination-primary;
+        }
+        &:hover {
+            border-color: $color-pagination-primary;
+        }
+    }
+
+    .rc-pagination-item-active {
+        background-color: $color-pagination-primary;
+        border-color: $color-pagination-primary
+    }
+
+    .rc-select-selection-selected-value {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: calc(100% - 1.5rem);
+    }
+}

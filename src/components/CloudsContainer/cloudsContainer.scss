@@ -1,0 +1,27 @@
+@import 'z-indexes';
+@import 'mixins';
+
+.clouds-container {
+    position: relative;
+    min-height: 40rem;
+    background: linear-gradient(to bottom, $home-page-from 0%, $home-page-to 100%);
+
+    .clouds {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: url('../../assets/images/clouds.png') center repeat-x;
+        z-index: map-get($zindex-clouds-container, clouds);
+    }
+
+    .logo-container {
+        @include page-padding();
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: map-get($zindex-clouds-container, logo);
+    }
+}

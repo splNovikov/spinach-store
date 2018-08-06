@@ -1,0 +1,47 @@
+@import "mixins";
+@import "colors";
+
+.card {
+    flex: 1 0 auto;
+    max-width: 30rem;
+    border: 1px solid $color-border;
+    margin: $padding-large-vertical;
+    height: 100%;
+
+    .image-container {
+        display: flex;
+        justify-content: center;
+
+        .image {
+            max-width: 100%;
+            max-height: 30rem;
+        }
+    }
+
+    .title-container {
+        border-bottom: 1px solid $color-border;
+        padding: $padding-large-vertical;
+
+        .title {
+            margin: 0;
+        }
+
+        .lines-limit {
+            @include lines-limit(2);
+        }
+    }
+
+    .content {
+        border-bottom: 1px solid $color-border;
+        padding: $padding-large-vertical;
+
+        .lines-limit {
+            @include lines-limit(5);
+        }
+    }
+
+    .share-icons-container {
+        padding: $padding-small-vertical;
+    }
+}
+

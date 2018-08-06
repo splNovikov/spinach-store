@@ -1,0 +1,98 @@
+@import "colors";
+
+$images-path: '/assets/images';
+
+$font-weight-light:         300 !default;
+$font-weight-regular:       400 !default;
+$font-weight-semi-bold:     600 !default;
+$font-weight-bold:          700 !default;
+$font-weight-extra-bold:    800 !default;
+
+$font-size-root:            10px !default; // 1 rem = 10px;
+$font-size-base:            1.4rem !default;
+$font-size-x-small:         1.0rem !default;
+$font-size-small:           1.2rem !default;
+$font-size-medium:          1.4rem !default;
+$font-size-large:           1.8rem !default;
+$font-size-x-large:         2.4rem !default;
+$font-size-xx-large:        3.2rem !default;
+
+$line-height-base:          1.5 !default;
+
+/* Border */
+$border:                    1px solid $color-border !default;
+$border-dark:               1px solid $color-border-dark !default;
+$border-radius:             .3rem !default;
+
+/* Buttons */
+$btn-border-radius-base:    .3rem;
+$btn-border-width:          1px;
+$btn-margin:                .5rem;
+$btn-font-weight:           $font-weight-bold;
+
+/* Icons */
+$icon-base-size:            $font-size-medium !default;
+$icon-large-size:           $font-size-x-large !default;
+
+/* Padding */
+$padding-large-content:     10rem !default;
+$padding-small-content:     2rem !default;
+
+$padding-base-vertical:     .8rem !default;
+$padding-base-horizontal:   2rem !default;
+
+$padding-xlarge-vertical:   3rem !default;
+$padding-xlarge-horizontal: 5rem !default;
+
+$padding-large-vertical:    1rem !default;
+$padding-large-horizontal:  3rem !default;
+
+$padding-normal-vertical:   .75rem !default;
+$padding-normal-horizontal: 4rem !default;
+
+$padding-small-vertical:    .5rem !default;
+$padding-small-horizontal:  1rem !default;
+
+$padding-xsmall-horizontal:  .5rem !default;
+
+$cursor-disabled:           not-allowed !default;
+
+/* z-index */
+$zindex-dropdown:             1000 !default;
+$zindex-popover:              1050 !default;
+$zindex-buttons-group:        1060 !default;
+$zindex-tooltip:              1070 !default;
+$zindex-datepicker:           1080 !default;
+$zindex-spinner:              1090 !default;
+$zindex-loading-block:        1100 !default;
+$zindex-modal-overlay:        1110 !default;
+
+/* Responsive */
+$responsive-breakpoints: (
+        xs: 0,
+        sm: 576px,
+        md: 768px,
+        lg: 992px,
+        xl: 1200px
+) !default;
+
+/* Animation */
+$animation-duration:          .3s;
+
+/* NavPanel */
+$nav-link-text-size:          $font-size-small;
+
+/* Page */
+$page-block-max-width:        120rem;
+
+/* Link */
+$link-active-text-shadow:     .1px 0 0, -.1px 0 0;
+
+/* Form */
+$height-base:                 4rem !default
+
+/* Pagination */
+$pagination-border-radius:    $border-radius;
+
+/* Select */
+$select-border-radius:        $border-radius;

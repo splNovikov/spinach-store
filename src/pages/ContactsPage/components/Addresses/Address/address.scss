@@ -1,0 +1,25 @@
+@import 'variables';
+
+.address {
+    flex: 1 0 auto;
+    padding: $padding-small-vertical $padding-small-horizontal;
+    cursor: pointer;
+    text-align: center;
+    min-width: 20rem;
+
+    .fa {
+        margin-right: $padding-small-horizontal;
+    }
+
+    .working-days {
+        text-transform: capitalize;
+    }
+
+    &.selected {
+        pointer-events: none;
+
+        .street {
+            font-weight: bold;
+        }
+    }
+}

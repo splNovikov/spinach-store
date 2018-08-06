@@ -1,0 +1,28 @@
+@import "variables";
+@import 'mixins';
+
+.news-page {
+  @include page-padding();
+
+  padding-top: $padding-xlarge-vertical;
+  padding-bottom: $padding-xlarge-vertical;
+
+  .page-controls {
+    margin-bottom: $padding-xlarge-vertical;
+
+    .rc-pagination {
+      flex: 1 0;
+    }
+
+    .search-form {
+      flex: 2 0;
+
+      .input-text,
+      .input-text input,
+      .input-text-label {
+        width: 100%;
+      }
+
+    }
+  }
+}

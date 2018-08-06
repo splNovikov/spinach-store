@@ -1,0 +1,22 @@
+@import 'colors';
+
+.textarea-label {
+    display: inline-block;
+
+    textarea.error {
+        background-color: $color-invalid-input-background;
+        border-color: $color-error-background;
+    }
+
+    &-title.vertical {
+        display: block;
+        margin-bottom: 0.5rem;
+    }
+
+    &-title.horizontal {
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 0.5rem;
+        margin-top: 0.5rem;
+    }
+}

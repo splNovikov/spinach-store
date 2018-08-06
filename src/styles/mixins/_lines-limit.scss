@@ -1,0 +1,9 @@
+@mixin lines-limit($lines) {
+    $line-height: 2rem;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: $line-height;
+    max-height: calc(#{$line-height} * #{$lines});
+    -webkit-box-orient: vertical;
+}

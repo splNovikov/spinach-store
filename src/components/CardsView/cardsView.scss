@@ -1,0 +1,18 @@
+@import "colors";
+
+.cards-view {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  .no-results {
+    display: flex;
+    flex: 1 0 auto;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+    height: 10rem;
+    color: $color-cards-no-results;
+  }
+}
+

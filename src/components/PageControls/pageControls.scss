@@ -1,0 +1,44 @@
+@import "mixins";
+
+.page-controls {
+  display: flex;
+  align-items: center;
+
+  .advanced,
+  .simple {
+    flex: 4 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .rc-pagination,
+  .sorting-select,
+  .search-form,
+  .view-toggles {
+    margin: $padding-small-vertical $padding-xsmall-horizontal;
+  }
+
+  .view-toggles {
+    min-width: 12rem;
+  }
+
+  .advanced {
+    .rc-pagination,
+    .sorting-select,
+    .search-form,
+    .spinner-placeholder,
+    .view-toggles {
+      flex: 1 0;
+    }
+  }
+
+  .simple {
+    justify-content: space-around;
+  }
+
+  .spinner-placeholder {
+    width: 12rem;
+  }
+}
+

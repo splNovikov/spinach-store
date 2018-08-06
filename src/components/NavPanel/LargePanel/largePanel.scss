@@ -1,0 +1,16 @@
+@import "mixins";
+
+.large-panel {
+
+    @include for-xs {
+        display: none;
+    }
+
+    @include for-sm {
+        display: none;
+    }
+
+    @include for-md {
+        display: block;
+    }
+}

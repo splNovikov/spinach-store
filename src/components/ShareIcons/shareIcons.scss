@@ -1,0 +1,12 @@
+@import "colors";
+@import "mixins";
+
+.share-icons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    .fa {
+        margin: 0 .5rem;
+    }
+}

@@ -1,0 +1,13 @@
+@import "variables";
+@import 'mixins';
+
+.products-page {
+    @include page-padding();
+
+    padding-top: $padding-xlarge-vertical;
+    padding-bottom: $padding-xlarge-vertical;
+
+    .products-table {
+        margin-top: $padding-large-vertical;
+    }
+}

@@ -1,0 +1,11 @@
+{
+  "app.pages.home": "Главная",
+  "app.pages.news": "Новости",
+  "app.pages.products": "Продукты",
+  "app.pages.product": "Продукт",
+  "app.pages.articles": "Статьи",
+  "app.pages.recipes": "Рецепты",
+  "app.pages.recipe": "Рецепт",
+  "app.pages.about": "О нас",
+  "app.pages.contacts": "Контакты"
+}

@@ -1,0 +1,120 @@
+//names from http://chir.ag/projects/name-that-color/
+
+/* private variables */
+// gray
+$_color-alabaster:          #FAFAFA;
+$_color-fantasy:            #FCFAF6;
+$_color-cararra:            #EAE8E5;
+$_color-pearl-bush:         #E9E3DC;
+$_color-silver-rust:        #CBC4BE;
+$_color-silver:             #BFBBBB;
+$_color-pine-cone:          #6B6056;
+$_color_fuscous_gray:       #5B5750;
+$_color_taupe:              #423932;
+// green
+$_color-pine-glade:         #ACCF83;
+$_color-limeade:            #75C317;
+// red
+$_color-very-light-pink:    #fddfdb;
+$_color-flamingo:           #EF4E37;
+$_color-alizarin-crimson:   #E23240;
+// yellow
+$_color-tango:              #F37721;
+$_color-yellow-orange:      #FCB633;
+// blue:
+$_color_malibu:             #81D4FA;
+
+$_color-sand-dune:          #7F7369;
+$_color-americano:          #847A72;
+$_color-night-shadz:        #A73251;
+$_color-pampas:             #F4F1ED;
+$_color-pampas-light:       #F8F6F4;
+
+/* public variables */
+$color-default:             $_color_fuscous_gray !default;
+$color-primary:             $_color-limeade !default;
+$color-positive:            $_color-pine-glade !default;
+$color-negative:            $_color-alizarin-crimson !default;
+
+/* Link */
+$color-link:                $_color-limeade !default;
+$color-link-hover:          darken($color-link, 15%) !default;
+
+/* Icons */
+$color-icon:                $_color-limeade !default;
+$color-icon-hover:          darken($color-icon, 15%) !default;
+$color-icon-inverse:        $_color-fantasy !default;
+$color-icon-disabled:       $_color-silver !default;
+$grey-icon-color:           $_color-silver !default;
+
+/* Text */
+$color-text:                $_color_fuscous_gray !default;
+$color-text-inverse:        $_color-fantasy !default;
+$color-text-muted:          $_color-sand-dune !default;
+$color-text-label:          $_color-pine-cone !default;
+
+$color-header:              $_color-pine-cone !default;
+$color-aside-bg:            $_color-pampas-light !default;
+
+/* Lines, borders */
+$color-border:              $_color-pearl-bush !default;
+$color-border-dark:         $_color-silver-rust !default;
+$color-line:                $_color-pearl-bush !default;
+
+/* Buttons */
+$color-btn-text:            $_color-fantasy !default;
+$color-btn-default-bg:      $color-primary !default;
+$color-btn-default-border:  $color-primary !default;
+$color-btn-underline:       $_color-pine-glade !default;
+
+/* NavPanel and Tabs */
+$color-nav-item-active:     $_color-sand-dune !default;
+$color-nav-item-hover:      $_color-limeade !default;
+$color-tab-hover:           $_color-fantasy !default;
+$color-tab-active:          $_color-pine-cone !default;
+$color-tab-bg:              $_color-fantasy !default;
+$color-nav-border:          $color-border !default;
+$color-nav-link-active:     $color-border !default;
+
+/* Page */
+$page-color:                $_color-fantasy;
+
+/* Footer */
+$footer-color:              $_color_taupe;
+$footer-disabled-region:    $_color-pine-cone;
+
+/* Home Page */
+$home-page-from:            $_color_cararra;
+$home-page-to:              $page-color;
+
+/* Error message */
+$color-error-background: $_color-flamingo;
+$color-error-text: $_color-alizarin-crimson;
+$color-error-summary-text: $_color-fantasy;
+
+/* Invalid input */
+$color-invalid-input-background: $_color-very-light-pink;
+
+/* Spinner */
+$color-spinner_bg: $_color-silver-rust !default;
+$color-spinner: $color-primary !default;
+
+/* Toasts */
+$color-toast-success-bg:        $_color-pine-glade;
+$color-toast-error-bg:          $_color-flamingo;
+$color-toast-warning-bg:        $_color-yellow-orange;
+$color-toast-info-bg:           $_color_malibu;
+
+/* Table */
+$color-table-border:            $color-border;
+$color-table-even-bg:           $_color-alabaster;
+$color-table-no-results:        $_color-silver;
+
+/* CardsView */
+$color-cards-no-results:        $_color-silver;
+
+/* Pagination */
+$color-pagination-primary:      $color-primary;
+
+/* Flex Card */
+$color-flex-card-background:    $_color-alabaster;

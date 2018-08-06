@@ -1,0 +1,42 @@
+@import "colors";
+@import "mixins";
+
+.slogan {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    @include for-xs {
+        height: 8rem;
+
+        .slogan-img {
+            height: 6rem;
+        }
+    }
+
+    @include for-sm {
+        height: 9rem;
+
+        .slogan-img {
+            height: 7rem;
+        }
+    }
+
+    @include for-md {
+        height: 10rem;
+
+        .slogan-img {
+            height: 8rem;
+        }
+    }
+
+    @include for-lg {
+        height: 12rem;
+
+        .slogan-img {
+            height: 10rem;
+        }
+    }
+
+}

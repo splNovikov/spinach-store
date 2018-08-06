@@ -1,0 +1,82 @@
+@import 'variables';
+@import 'colors';
+
+.toast {
+    .toastr {
+        min-height: 2rem;
+
+        & > div {
+            display: flex;
+            align-items: center;
+        }
+
+        // reset to defaults:
+        .rrt-left-container,
+        .rrt-middle-container,
+        .rrt-right-container {
+            float: none;
+            width: auto;
+            position: relative;
+        }
+
+        .rrt-left-container {
+            display: none;
+        }
+
+        .rrt-middle-container {
+            margin: 0;
+            padding: 0;
+            font-family: inherit;
+
+            .rrt-title {
+                margin: 0;
+                font-weight: normal;
+            }
+        }
+
+        .rrt-right-container {
+            .close-toastr {
+                position: static;
+                width: auto;
+                height: auto;
+            }
+        }
+
+        // end reset to defaults
+
+        .rrt-right-container {
+            width: 3rem;
+
+            .close-toastr {
+                font-size: $font-size-medium;
+            }
+        }
+
+        .rrt-middle-container {
+            flex: 1 0;
+            padding: 1rem 0 1rem 1rem;
+            font-size: $font-size-small;
+        }
+
+        // toast-specific styles
+        @mixin toast-specific-mixin($primary) {
+            background-color: $primary;
+        }
+
+        &.rrt-success {
+            @include toast-specific-mixin($color-toast-success-bg);
+        }
+
+        &.rrt-error {
+            @include toast-specific-mixin($color-toast-error-bg);
+        }
+
+        &.rrt-warning {
+            @include toast-specific-mixin($color-toast-warning-bg);
+        }
+
+        &.rrt-info {
+            @include toast-specific-mixin($color-toast-info-bg);
+        }
+    }
+}

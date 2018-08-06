@@ -1,0 +1,14 @@
+/* home page */
+$zindex-clouds-container: (
+    clouds:         10,
+    logo:           20
+);
+
+$zindex-dropdown:           1000 !default;
+$zindex-popover:            1050 !default;
+$zindex-buttons-group:      1060 !default;
+$zindex-tooltip:            1070 !default;
+$zindex-datepicker:         1080 !default;
+$zindex-spinner:            1090 !default;
+$zindex-loading-block:      1100 !default;
+$zindex-modal-overlay:      1110 !default;

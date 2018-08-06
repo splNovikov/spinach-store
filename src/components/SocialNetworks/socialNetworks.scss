@@ -1,0 +1,21 @@
+@import "colors";
+
+.social-networks {
+    display: flex;
+    height: 3rem;
+
+    .links {
+        flex: 2 0 auto;
+    }
+
+    .social-icons {
+        flex: 1 0 auto;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .fa {
+        margin: 0 1rem;
+    }
+}
